@@ -269,6 +269,15 @@ views:
             tap_action:
               action: navigate
               navigation_path: buiten
+      - type: custom:mushroom-title-card
+        subtitle: Familie agenda
+      - type: horizontal-stack
+        cards:
+          - type: calendar
+            entities:
+              - calendar.fam_scholten_7944_gmail_com
+            initial_view: listWeek
+            title: Aankomende afspraken
   - theme: Backend-selected
     title: Woonkamer
     path: woonkamer
